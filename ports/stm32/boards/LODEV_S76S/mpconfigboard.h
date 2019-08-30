@@ -48,6 +48,6 @@
 #define MICROPY_HW_USRSW_PRESSED    (0)
 
 // NUCLEO-64 has one user LED
-#define MICROPY_HW_LED1             (pin_A5) // green
+#define MICROPY_HW_LED1             (pin_A5) // red (R1) or blue (R2)
 #define MICROPY_HW_LED_ON(pin)      (mp_hal_pin_high(pin))
 #define MICROPY_HW_LED_OFF(pin)     (mp_hal_pin_low(pin))
