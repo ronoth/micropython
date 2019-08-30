@@ -2,7 +2,7 @@
  * MIT License; Copyright (c) 2019 Damien P. George
  */
 
-#define MICROPY_HW_BOARD_NAME       "NUCLEO-L073RZ"
+#define MICROPY_HW_BOARD_NAME       "LODEV_S76S"
 #define MICROPY_HW_MCU_NAME         "STM32F073RZT6"
 
 #define MICROPY_EMIT_THUMB          (0)
@@ -22,13 +22,13 @@
 #define MICROPY_HW_HAS_SWITCH       (1)
 
 // UART config
-#define MICROPY_HW_UART1_TX     (pin_B6)
-#define MICROPY_HW_UART1_RX     (pin_B7)
+#define MICROPY_HW_UART1_TX     (pin_A9)
+#define MICROPY_HW_UART1_RX     (pin_A10)
 #define MICROPY_HW_UART2_TX     (pin_A2)
 #define MICROPY_HW_UART2_RX     (pin_A3)
 
 // USART2 is connected to the ST-LINK USB VCP
-#define MICROPY_HW_UART_REPL PYB_UART_2
+#define MICROPY_HW_UART_REPL PYB_UART_1
 #define MICROPY_HW_UART_REPL_BAUD 115200
 
 // I2C busses
